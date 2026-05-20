@@ -3,16 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artisan Tours 2026 — Trigu Italia</title>
+  <title>Artisan Tours — Trigu Italia</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .tour-card { background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.07); margin-bottom:32px; display:grid; grid-template-columns:1fr 2fr; }
-    .tour-card__image { background:#1a3a2a url('https://triguitalia.com/wp-content/uploads/2021/11/img-cheese-home-02.jpg') center/cover; min-height:220px; }
-    .tour-card__content { padding:36px 40px; }
-    .tour-card__content h3 { font-family:'Playfair Display',serif; font-size:1.4rem; margin-bottom:8px; color:#1a2e1a; }
-    .tour-card__content .meta { font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#4a9e72; margin-bottom:14px; }
-    .tour-card__content p { color:#5c4a30; font-size:15px; margin-bottom:20px; }
-    @media(max-width:640px){ .tour-card{ grid-template-columns:1fr; } .tour-card__image{ min-height:160px; } }
+    .centenerian-frame {
+      width: 100%;
+      height: 85vh;
+      border: none;
+      display: block;
+    }
+    .frame-banner {
+      background: #111;
+      border-bottom: 1px solid #b8962e;
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .frame-banner span {
+      font-size: 12px;
+      color: #a09080;
+      letter-spacing: 0.05em;
+    }
+    .frame-banner a {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #b8962e;
+      text-decoration: none;
+    }
+    .frame-banner a:hover { color: #d4ae40; }
   </style>
 </head>
 <body>
@@ -22,8 +45,8 @@
       <span class="top-banner__text"><strong>As seen on Stanley Tucci: Searching for Italy</strong> &mdash; Jon Brownstein, founder of Trigu</span>
       <span class="top-banner__divider">|</span>
       <div class="top-banner__ctas">
-        <a class="top-banner__btn top-banner__btn--teal" href="https://thecentenerian.com" target="_blank" rel="noopener">🫒 Sardinia Tours &amp; Experiences</a>
-        <a class="top-banner__btn top-banner__btn--outline" href="https://golfinsardinia.com" target="_blank" rel="noopener">⛳ Golf in Sardinia</a>
+        <a class="top-banner__btn top-banner__btn--gold" href="https://thecentenerian.com" target="_blank" rel="noopener">🫒 Sardinia Tours &amp; Experiences</a>
+        <a class="top-banner__btn top-banner__btn--outline" href="https://golfsardinia.com" target="_blank" rel="noopener">⛳ Golf in Sardinia</a>
       </div>
     </div>
   </div>
@@ -41,11 +64,19 @@
           <li><a href="shop.html">Shop</a></li>
         </ul>
         <div class="nav__pills">
-          <a class="nav__pill nav__pill--teal" href="https://thecentenerian.com" target="_blank" rel="noopener">
-            <span class="nav__pill-icon">🫒</span><span class="nav__pill-label"><span class="nav__pill-title">Tours &amp; Experiences</span><span class="nav__pill-sub">thecentenerian.com</span></span>
+          <a class="nav__pill nav__pill--gold" href="https://thecentenerian.com" target="_blank" rel="noopener">
+            <span class="nav__pill-icon">🫒</span>
+            <span class="nav__pill-label">
+              <span class="nav__pill-title">Tours &amp; Experiences</span>
+              <span class="nav__pill-sub">thecentenerian.com</span>
+            </span>
           </a>
-          <a class="nav__pill nav__pill--olive" href="https://golfinsardinia.com" target="_blank" rel="noopener">
-            <span class="nav__pill-icon">⛳</span><span class="nav__pill-label"><span class="nav__pill-title">Golf Sardinia</span><span class="nav__pill-sub">golfinsardinia.com</span></span>
+          <a class="nav__pill nav__pill--outline" href="https://golfsardinia.com" target="_blank" rel="noopener">
+            <span class="nav__pill-icon">⛳</span>
+            <span class="nav__pill-label">
+              <span class="nav__pill-title">Golf Sardinia</span>
+              <span class="nav__pill-sub">golfsardinia.com</span>
+            </span>
           </a>
         </div>
         <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
@@ -53,77 +84,20 @@
     </div>
   </header>
 
-  <div class="page-header">
-    <h1>Artisan Tours 2026</h1>
-    <p>A week-long full immersion into the artisan traditions of Sardinia.</p>
+  <!-- Frame banner -->
+  <div class="frame-banner">
+    <span>Viewing: thecentenerian.com — Sardinia Tours &amp; Experiences</span>
+    <a href="https://thecentenerian.com" target="_blank" rel="noopener">Open in new tab ↗</a>
   </div>
 
-  <section class="section section--white">
-    <div class="container">
-      <p style="max-width:660px; margin:0 auto 48px; text-align:center; color:#5c4a30; font-size:16px;">
-        Our chef tours take small groups deep into the heart of Sardinian food culture —
-        meeting shepherds, cheesemakers, winemakers, and fishermen who carry on centuries-old traditions.
-        These are not tourist experiences. They are professional and personal relationships built over decades.
-      </p>
+  <!-- Embed thecentenerian.com -->
+  <iframe
+    class="centenerian-frame"
+    src="https://thecentenerian.com"
+    title="The Centenerian — Sardinia Tours and Experiences"
+    loading="lazy">
+  </iframe>
 
-      <div class="tour-card">
-        <div class="tour-card__image"></div>
-        <div class="tour-card__content">
-          <div class="meta">Spring 2026 — Dates TBC</div>
-          <h3>Cheese &amp; Pastoral Traditions</h3>
-          <p>Follow the shepherds of the Barbagia highlands. Visit aging caves, meet third-generation cheesemakers, and participate in a traditional <em>caseificio</em> session. Seven days, maximum eight guests.</p>
-          <a class="btn btn--primary" href="mailto:jon@triguitalia.com?subject=Tour Inquiry 2026">Inquire About This Tour</a>
-        </div>
-      </div>
-
-      <div class="tour-card">
-        <div class="tour-card__image" style="background-position:30% center;"></div>
-        <div class="tour-card__content">
-          <div class="meta">Autumn 2026 — Dates TBC</div>
-          <h3>Land &amp; Sea — The Full Sardinian Table</h3>
-          <p>From the fishing villages of the western coast to the inland olive groves, this tour covers the full breadth of the Sardinian pantry. Includes a collaborative dinner with a local Michelin-starred chef.</p>
-          <a class="btn btn--primary" href="mailto:jon@triguitalia.com?subject=Tour Inquiry 2026">Inquire About This Tour</a>
-        </div>
-      </div>
-
-      <div style="background:#eef6f0; border:1px solid #c0ddc8; border-radius:8px; padding:32px 40px; text-align:center; margin-top:16px;">
-        <h4 style="color:#2d6645; margin-bottom:8px;">Looking for a consumer tour experience?</h4>
-        <p style="color:#3a6040; margin-bottom:20px;">Our sister site thecentenerian.com offers curated Sardinian travel experiences for everyone.</p>
-        <a class="btn btn--primary" href="https://thecentenerian.com" target="_blank" rel="noopener">Visit thecentenerian.com</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a class="nav__logo" href="index.html">Trigu <span>Italia</span></a>
-          <p>Sardinian artisan products, fresh to the USA in under 3 days.</p>
-        </div>
-        <div class="footer__col">
-          <h4>Navigate</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
-            <li><a href="tours.html">Artisan Tours 2026</a></li><li><a href="catalog.html">Catalog</a></li>
-            <li><a href="newsletter.html">Newsletter</a></li><li><a href="shop.html">Shop</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Contact</h4>
-          <address>+1 617 580 1151<br>+39 348 7300481<br><a href="mailto:jon@triguitalia.com">jon@triguitalia.com</a></address>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span>© 2025 Trigu Italia LLC</span>
-        <div class="footer__social">
-          <a href="https://www.facebook.com/triguitalia" target="_blank">Facebook</a>
-          <a href="https://www.instagram.com/triguitalia/" target="_blank">Instagram</a>
-          <a href="https://www.youtube.com/playlist?list=PLwPYu4WiBihHK6lud4tmc3EBZpIXLKwQ8" target="_blank">YouTube</a>
-        </div>
-      </div>
-    </div>
-  </footer>
   <script src="main.js"></script>
 </body>
 </html>
